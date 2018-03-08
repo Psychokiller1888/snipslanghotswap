@@ -73,3 +73,5 @@ __To ask the language (replace language by either english, french or german):__
 - was für eine Sprache sprichst du
 - was sprichst du
 
+
+![Logs screenshot](logs.png)
