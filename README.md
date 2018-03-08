@@ -19,7 +19,10 @@ Copy the english assistant
 Restart snips:
 > sudo systemctl restart "snips*"
 
-Start snips-watch
+Start the script:
+> python main.py
+
+In another Kitty/Putty instance, or another terminal, start snips-watch
 > snips-watch -v
 
 
