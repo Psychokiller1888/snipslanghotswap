@@ -1,0 +1,38 @@
+{
+  "name" : "LangHotswap - DE",
+  "intents" : [ {
+    "id" : "Psychokiller1888:languageSwitch",
+    "type" : "registry",
+    "version" : "0.0.4",
+    "language" : "de",
+    "slots" : [ {
+      "name" : "language",
+      "id" : "Hk6yx1Jtf",
+      "entity" : "",
+      "entityId" : "entity_0Y5MBANXkqq",
+      "missingQuestion" : "welche sprache",
+      "required" : true
+    } ],
+    "name" : "languageSwitch"
+  }, {
+    "id" : "Psychokiller1888:askLanguage",
+    "type" : "registry",
+    "version" : "0.0.1",
+    "language" : "de",
+    "slots" : [ ],
+    "name" : "askLanguage"
+  } ],
+  "createdAt" : "2018-03-08T16:06:50.980Z",
+  "language" : "de",
+  "nluEngine" : {
+    "version" : "0.12.0"
+  },
+  "platform" : {
+    "type" : "raspberrypi"
+  },
+  "asr" : {
+    "type" : "snips"
+  },
+  "analyticsEnabled" : true,
+  "hotword" : "hey_snips"
+}
