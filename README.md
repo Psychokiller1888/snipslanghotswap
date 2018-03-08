@@ -11,7 +11,7 @@ Make langSwitch.sh executable:
 > sudo chmod +x langSwitch.sh
 
 If you are already running snips, delete the old assistant:
-> sudo rm /usr/share/snips/assistant
+> sudo rm -r /usr/share/snips/assistant
 
 Copy the english assistant
 > sudo cp -r assistants/assistant_en /usr/share/snips/assistant
