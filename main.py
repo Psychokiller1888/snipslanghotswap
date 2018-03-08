@@ -5,10 +5,6 @@
 # If you find any bugs, please report on github
 # If reusing keep credits
 
-# sudo cp -r assistants/assistant_en /usr/share/snips/assistant
-# sudo systemctl restart "snips*"
-
-
 import json
 import paho.mqtt.client 	as mqtt
 import sqlite3

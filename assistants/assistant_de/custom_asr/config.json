@@ -4,14 +4,14 @@
     "latticeBeamSize": 1.0, 
     "maxActive": 2000, 
     "minActive": 200, 
-    "acousticScale": 0.8, 
-    "beamSize": 10.0
+    "acousticScale": 1.2, 
+    "beamSize": 16.0
   }, 
   "asrModel": {
     "version": "0.1.0"
   }, 
   "asrLmAdaptation": {
-    "version": "0.6.10"
+    "version": "0.6.7"
   }, 
   "endpointingRules": {
     "rule3": {
