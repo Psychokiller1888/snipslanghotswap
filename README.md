@@ -33,6 +33,11 @@ This demo has one bundle with two intents:
 
 This demo support english, french and german.
 
+Then, a simple call to **langSwitch.sh** with the language shortcode is enough to switch. The very small bash script will remove the old assistant, copy the new one in place, restart snips wiat a short while as it's needed. Then the script wil lcontinue and confirm the switch in the new language.
+
+The current language is kept in a sqlite3 database, in a table called "config" that can be extended to your own needs. The table has two columns "_configName_" and "_configValue_", TEXT as NOT NULL. Be aware that the table doesn't have any unique identifier if you intend to use it
+
+
 __To switch language you have (replace language by either english, french or german):__
 
 - i want to speak french with you
