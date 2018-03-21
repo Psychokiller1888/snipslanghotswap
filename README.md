@@ -41,6 +41,10 @@ Then, a simple call to **langSwitch.sh** with the language shortcode is enough t
 The current language is kept in a sqlite3 database, in a table called "config" that can be extended to your own needs. The table has two columns "_configName_" and "_configValue_", TEXT as NOT NULL. Be aware that the table doesn't have any unique identifier if you intend to use it
 
 
+# Demo
+https://www.youtube.com/watch?v=RE6SePehWCk
+
+
 __To switch language you have (replace language by either english, french or german):__
 
 - i want to speak french with you
