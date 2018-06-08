@@ -1,4 +1,5 @@
 {
+  "id" : "proj_Pyxb4WWl4AV",
   "name" : "LangHotswap - EN",
   "intents" : [ {
     "id" : "Psychokiller1888:askLanguage",
@@ -10,12 +11,11 @@
   }, {
     "id" : "Psychokiller1888:languageSwitch",
     "type" : "registry",
-    "version" : "0.0.5",
+    "version" : "0.0.11",
     "language" : "en",
     "slots" : [ {
       "name" : "language",
       "id" : "SkOOcCCdG",
-      "entity" : "",
       "entityId" : "entity_2VXGrWEwl1x",
       "missingQuestion" : "what language",
       "required" : true
@@ -24,8 +24,8 @@
   } ],
   "createdAt" : "2018-03-08T15:42:56.420Z",
   "language" : "en",
-  "nluEngine" : {
-    "version" : "0.12.0"
+  "version" : {
+    "nluModel" : "0.14.0"
   },
   "platform" : {
     "type" : "raspberrypi"
@@ -34,5 +34,6 @@
     "type" : "snips"
   },
   "analyticsEnabled" : true,
+  "heartbeatEnabled" : true,
   "hotword" : "hey_snips"
 }

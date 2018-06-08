@@ -34,7 +34,7 @@ This demo has one bundle with two intents:
 - languageSwitch: Does actually switch the language
 - askLanguage: Snipe answers you the language currently in use
 
-This demo support english, french and german.
+This demo supports english, french and german.
 
 Then, a simple call to **langSwitch.sh** with the language shortcode is enough to switch. The very small bash script will remove the old assistant, copy the new one in place, restart snips wiat a short while as it's needed. Then the script wil lcontinue and confirm the switch in the new language.
 

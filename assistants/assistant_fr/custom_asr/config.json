@@ -1,17 +1,25 @@
 {
+  "entityNameToFilename": {
+    "Languages": "e_0.snips"
+  }, 
+  "injectionsEngine": {
+    "version": 1
+  }, 
+  "language": "fr", 
   "decoderConfig": {
     "useFinalProbs": true, 
     "latticeBeamSize": 1.0, 
     "maxActive": 2000, 
     "minActive": 200, 
-    "acousticScale": 1.0, 
+    "acousticScale": 0.83, 
     "beamSize": 10.0
   }, 
+  "cacheSizeDynamic": 536870912, 
   "asrModel": {
     "version": "0.1.0"
   }, 
   "asrLmAdaptation": {
-    "version": "0.6.10"
+    "version": "0.9.2"
   }, 
   "endpointingRules": {
     "rule3": {
@@ -21,7 +29,7 @@
       "mustContainNonsilence": true
     }, 
     "rule2": {
-      "maxRelativeCost": 3.5, 
+      "maxRelativeCost": 7.5, 
       "minTrailingSilence": 0.5, 
       "minUtteranceLength": 0.0, 
       "mustContainNonsilence": true
@@ -48,30 +56,37 @@
   "postprocessors": [
     {
       "Regex": {
-        "pattern": "`Languages`START .[^`]*? `Languages`DECOY`EMPTY `Languages`END", 
+        "pattern": "`186153bd-6816-4f58-b803-7c417e3ba922`START .[^`]*? `186153bd-6816-4f58-b803-7c417e3ba922`DECOY`EMPTY `186153bd-6816-4f58-b803-7c417e3ba922`END", 
         "flags": "i", 
         "replacement": "unknownword"
       }
     }, 
     {
       "Regex": {
-        "pattern": "`Languages`START .[^`]*? `Languages`DECOY`INSIDE .*? `Languages`END`DECOY `Languages`END", 
+        "pattern": "`186153bd-6816-4f58-b803-7c417e3ba922`START .[^`]*? `186153bd-6816-4f58-b803-7c417e3ba922`DECOY`INSIDE .*? `186153bd-6816-4f58-b803-7c417e3ba922`END`DECOY `186153bd-6816-4f58-b803-7c417e3ba922`END", 
         "flags": "i", 
         "replacement": "unknownword"
       }
     }, 
     {
       "Regex": {
-        "pattern": "`Languages`START`DECOY (.*?) `Languages`END`DECOY", 
+        "pattern": "`186153bd-6816-4f58-b803-7c417e3ba922`START`DECOY (.*?) `186153bd-6816-4f58-b803-7c417e3ba922`END`DECOY", 
         "flags": "i", 
         "replacement": "unknownword"
       }
     }, 
     {
       "Regex": {
-        "pattern": "`Languages`START (.*?) `Languages`END", 
+        "pattern": "`186153bd-6816-4f58-b803-7c417e3ba922`START (.*?) `186153bd-6816-4f58-b803-7c417e3ba922`END", 
         "flags": "i", 
         "replacement": "$1"
+      }
+    }, 
+    {
+      "Regex": {
+        "pattern": "`186153bd-6816-4f58-b803-7c417e3ba922`START ", 
+        "flags": "i", 
+        "replacement": ""
       }
     }, 
     {
@@ -84,5 +99,25 @@
   ], 
   "asrEngine": {
     "version": "0.1.0"
+  }, 
+  "entitiesFstMap": [
+    [
+      73, 
+      "__root__"
+    ], 
+    [
+      74, 
+      "e_0.snips"
+    ]
+  ], 
+  "entityNameToDisambigs": {
+    "Languages": {
+      "start": "`186153bd-6816-4f58-b803-7c417e3ba922`START", 
+      "end": "`186153bd-6816-4f58-b803-7c417e3ba922`END", 
+      "empty": [
+        "`186153bd-6816-4f58-b803-7c417e3ba922`DECOY`EMPTY", 
+        2
+      ]
+    }
   }
 }
