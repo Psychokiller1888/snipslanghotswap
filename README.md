@@ -12,11 +12,11 @@ Make langSwitch.sh executable:
 
 Now, you will need one assistant per language. Add the corresponding app to your assistants
 
-For english: [Language Switch](https://console.snips.ai/app-editor/bundle_k7r9BYdx6ba)
+> For english: [Language Switch](https://console.snips.ai/app-editor/bundle_k7r9BYdx6ba)
 
-For french: [Changement de langue](https://console.snips.ai/app-editor/bundle_b1VekKNvqNb)
+> For french: [Changement de langue](https://console.snips.ai/app-editor/bundle_b1VekKNvqNb)
 
-For german: [Sprache wechsel](https://console.snips.ai/app-editor/bundle_M4ydnED4aoE)
+> For german: [Sprache wechsel](https://console.snips.ai/app-editor/bundle_M4ydnED4aoE)
 
 Extract them and upload them to /assistants/assistant_XX where XX is the language code. Exemple: the french assistant goes to assistant_fr
 
